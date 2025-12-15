@@ -1,10 +1,122 @@
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
 }
 
+
+/* ==============================
+BODY
+============================== */
 body {
-  font-family: system-ui, sans-serif;
-  line-height: 1.5;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+}
+
+.login-header {
+  display: flex;
+  align-items: center;      /* centra verticalmente */
+  justify-content: center;  /* centra horizontalmente */
+  gap: 12px;                /* espacio entre logo y texto */
+  margin-bottom: 1.5rem;
+}
+
+
+ .logo-image {
+  align-items: center;
+  width: 10rem;
+  margin-bottom: 20px;
+  width: 40px;
+  height: auto;
+ }
+
+ .login-container img {
+  width: 130px;
+  height: 100px;
+ }
+/* ==============================
+CONTENEDOR PRINCIPAL
+============================== */
+.login-container {
+background-color: #53a6f9;
+width: 100%;
+max-width: 380px;
+padding: 50px;
+border-radius: 16px;
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* ==============================
+TÍTULO
+============================== */
+.login-container h1 {
+text-align: center;
+margin-bottom: 1.5rem;
+color: rgb(255, 255, 255);
+font-size: 3rem;
+font-family: 'Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+letter-spacing: 3px;
+}
+
+
+/* ==============================
+GRUPO DE INPUTS
+============================== */
+.form-group {
+margin-bottom: 1.2rem;
+}
+
+
+.form-group label {
+display: block;
+margin-bottom: 0.4rem;
+font-size: 0.9rem;
+color: #374151;
+}
+
+
+.form-group input {
+width: 100%;
+padding: 0.7rem 0.9rem;
+border-radius: 8px;
+border: 1px solid #d1d5db;
+font-size: 0.95rem;
+outline: none;
+transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+.form-group input:focus {
+border-color: #3b82f6;
+box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+
+/* ==============================
+BOTÓN
+============================== */
+.login-btn {
+width: 100%;
+padding: 0.8rem;
+background-color: #2563eb;
+border: none;
+border-radius: 10px;
+color: white;
+font-size: 1rem;
+font-weight: 600;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.login-btn:hover {
+background-color: #1e40af;
+transform: translateY(-2px);
 }
